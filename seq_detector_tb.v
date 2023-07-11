@@ -6,8 +6,7 @@ wire z;
 
 sequence_detector SEQ (.x(x),.clk(clk),.reset(reset),.z(z));
 initial begin
-	$dumpfile("sequence_detector.vcd");
-	$dumpvars(0,sequence_detector_test);
+	
 	//$monitor("input=%b , output=%b",x,z);
 	clk=0; reset=1;
 	#15 reset=0;
